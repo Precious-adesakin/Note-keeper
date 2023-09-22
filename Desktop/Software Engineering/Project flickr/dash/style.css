@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.crop{
+    background-image: url(image1/033120190455-by-Henry.2edde7a9.jpg);
+}
+
+.marvel{
+    /* background-color: black; */
+    opacity: 0.1;
+    height: 60px;
+    width: 100%;
+    opacity: unset;
+    border: 1px solid black;
+}
+
+.praise{
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.search{
+    margin-right: 0px;
+}
+
+.group{
+    width: 720px;
+    margin-left: 116px;
+    height: 31px;
+    outline: none;
+}
+
+.Log{
+    width: 60px;
+    margin-left: 40px;
+    background-color: #d2e1e6;
+    border: 0px;
+    color: white !important;
+    font-size: 17px;
+}
+
+.Sign{
+    text-align: center;     
+    width: 90px;
+    margin-left: 40px;
+    /* background-color: black; */
+    /* border: 0px; */
+    color: black !important;
+    font-size: 15px;
+    height: 30px;
+}
+
+.jog{
+    height: 585px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.Find{
+    margin-top: 86px;
+    font-size: 50px;
+    margin-left: 370px;
+}
+/* 
+.item{
+    background-image: url(image1/033120190455-by-Henry.2edde7a9.jpg);
+    height: 590px;
+    margin-top: -225px;
+} */
+
+.cont{
+    margin-left: 250px;
+    margin-top: 25px;
+    font-size: 33px;
+}
+
+.photo{
+    margin-left: 460px;
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+.free{
+    width: 190px;
+    margin-left: 530px;
+    background-color: white;
+    border: 0px;
+    color: 2px solid blue!important;
+    font-size: 17px;
+    height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 55px;
+}
+
+.bmode{
+    margin-left: 590px;
+    margin-top: 45px;
+}
+
+.grow{
+    margin-left: 565px;
+}
+
+.second{
+    background-color:#999999;
+    height: 80px;
+    margin-top: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 475px) {
+    body{
+        overflow: hidden;
+    }
+    
+    body img{
+        height: 12px;
+        width: 10px;
+    }
+    .praise{
+        width: 50px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .marvel{
+        /* background-color: black; */
+        opacity: ;
+        height: 40px;
+        width: 207px;
+        opacity: unset;
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .group{
+        display: none;
+    }
+    .Sign{
+        display: none;
+    }
+    
+    .Log{
+        width: 40px;
+        height: 22px;
+        /* padding: 10px; */
+        margin-left: 5px;
+        background-color: #d2e1e6;
+        border: 2px solid white;
+        text-align: center;
+        color: white !important;
+        font-size: 11px;
+        margin-top: 2px !important;
+    }
+
+    .search{
+        width: 13px;
+        /* color: white; */
+        margin-left: 70px;
+        margin-top: px !important;
+    }
+    .Find{
+        margin-top: 150px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .Find h1{
+        color: white;
+    }
+    .cont{
+        display: none;
+    }
+    .photo{
+        display: none;
+    }
+    .bmode{
+        display: none; 
+    }
+    .grow{
+        display: none;
+    }
+
+    .free{
+        margin-left: 50px;
+        width: 85px;
+        background-color: white;
+        border: 0px;
+        color: 2px solid blue!important;
+        font-size: 13px;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 55px;
+    }
+
+    .second{
+        width: 207px;
+    }
+
+
+
+
+    
+}
