@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-7 mx auto shadow mt-5 p-5">
+                    <h2>NOTE KEEPER</h2>
+                    <hr>
+    
+                    <div id="noteBoxes" style="height: 35vh"></div>
+                    <div class="row">
+                        <input type="text" id="noteBox" class="form-control col me-1" placeholder="Title">
+                        <input type="date" id="timeBox" class="form-control col me-1" placeholder="Time"> 
+                        <input type="text" id="noteBody" class="form-control float-middle mt-2 " placeholder="Body">
+                        <button class="btn btn-primary mt-3" onclick="saveContact()">Save</button>
+                        <!-- <button class="btn btn-primary" style="margin-top: 5px;" onclick="Editany()">Edit any</button>
+                        <button class="btn btn-primary" style="margin-top: 5px;" onclick="Deleteall()">Delete all</button> -->
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var notekeep=[];
+        function saveContact(){
+            let noteInput = document.getElementById("noteBox").value
+            let timeInput = document.getElementById("timeBox").value 
+            let bodyInput = document.getElementById("noteBody").value 
+
+            let noted ={note:noteInput, time:timeInput, body:bodyInput}
+            notekeep.push(noted);
+            console.log(notekeep)
+
+            document.getElementById("noteBox").value ="";
+            document.getElementById("timeBox").value ="";
+            document.getElementById("noteBody").value ="";
+            displayContact();
+        }
+
+        function displayContact(){
+            let content="";
+            notekeep.map((c) =>{
+                content += ` <div class='shadow h-5' >
+                    <p class= 'bg-primary  p-3 text-white'>${c.note}
+                <small class='float-end text-white'>${c.time}</small> 
+                <h3 class='float-middle' >${c.body}</h3>
+                </p> 
+                    </div> `;
+            })
+            document.getElementById("noteBoxes").innerHTML = content 
+            }
+    </script>
+</body>
+</html>
